@@ -1,7 +1,7 @@
 #!/bin/bash
 
 VENDOR=lge
-DEVICE=hammerheadcaf
+DEVICE=hammerhead
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 

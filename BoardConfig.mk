@@ -20,6 +20,8 @@ TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
 TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
+TARGET_USE_KRAIT_BIONIC_OPTIMIZATION := true
+TARGET_USE_KRAIT_PLD_SET := true
 
 TARGET_NO_BOOTLOADER := true
 
@@ -112,6 +114,8 @@ BOARD_HAL_STATIC_LIBRARIES := libdumpstate.hammerhead
 # Define kernel config for inline building
 TARGET_KERNEL_CONFIG := cyanogenmod_hammerhead_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := \
+    $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-
 
 # SELinux policies
 # QCOM
@@ -177,7 +181,12 @@ BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 # Hardware
 BOARD_HARDWARE_CLASS := device/lge/hammerheadcaf/cmhw
 
--include vendor/lge/hammerheadcaf/BoardConfigVendor.mk
+# Build Optimization
+TARGET_USE_O3 := false
+TARGET_GCC_VERSION_EXP := 4.9
+PRODUCT_PREBUILT_WEBVIEWCHROMIUM := false
+
+-include vendor/lge/hammerhead/BoardConfigVendor.mk
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
