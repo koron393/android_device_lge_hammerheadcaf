@@ -183,10 +183,10 @@ BOARD_HARDWARE_CLASS := device/lge/hammerheadcaf/cmhw
 
 # Build Optimization
 TARGET_USE_O3 := false
-TARGET_GCC_VERSION_EXP := 4.9
+#TARGET_GCC_VERSION_EXP := 4.9
 PRODUCT_PREBUILT_WEBVIEWCHROMIUM := false
 
--include vendor/lge/hammerhead/BoardConfigVendor.mk
+-include vendor/lge/hammerheadcaf/BoardConfigVendor.mk
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true

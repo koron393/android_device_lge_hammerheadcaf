@@ -28,4 +28,4 @@ PRODUCT_MANUFACTURER := LGE
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
 $(call inherit-product, device/lge/hammerheadcaf/device.mk)
-$(call inherit-product, vendor/lge/hammerhead/hammerhead-vendor.mk)
+$(call inherit-product, vendor/lge/hammerheadcaf/hammerheadcaf-vendor.mk)
