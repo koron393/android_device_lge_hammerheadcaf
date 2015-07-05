@@ -187,6 +187,9 @@ TARGET_USE_O3 := false
 TARGET_GCC_VERSION_EXP := 4.9
 PRODUCT_PREBUILT_WEBVIEWCHROMIUM := false
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := hammerhead,hammerheadcaf
+
 -include vendor/lge/hammerheadcaf/BoardConfigVendor.mk
 
 # Include an expanded selection of fonts
