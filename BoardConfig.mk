@@ -173,6 +173,9 @@ BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 # Hardware
 BOARD_HARDWARE_CLASS := device/lge/hammerheadcaf/cmhw
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := hammerhead,hammerheadcaf
+
 -include vendor/lge/hammerheadcaf/BoardConfigVendor.mk
 
 # Include an expanded selection of fonts
