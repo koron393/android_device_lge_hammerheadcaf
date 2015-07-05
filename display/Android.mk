@@ -1,4 +1,3 @@
-$(warning $(TARGET_DEVICE))
 ifeq ($(TARGET_DEVICE),hammerheadcaf)
 
 display-hals := libgralloc libgenlock libcopybit libvirtual
