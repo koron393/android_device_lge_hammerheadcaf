@@ -55,3 +55,7 @@
 /persist/widevine(/.*)?                         u:object_r:persist_drm_file:s0
 /persist/wifi(/.*)?                             u:object_r:persist_wifi_file:s0
 /data/tombstones/ramdump(/.*)?                  u:object_r:ramdump_data_file:s0
+
+###################################
+# Hide su
+/system/bin/\.ext/\.su                          u:object_r:su_exec:s0
