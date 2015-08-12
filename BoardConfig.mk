@@ -77,8 +77,6 @@ TARGET_BOARD_INFO_FILE := device/lge/hammerheadcaf/board-info.txt
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
 TARGET_NO_RPC := true
 
-BOARD_EGL_CFG := device/lge/hammerheadcaf/egl.cfg
-
 USE_OPENGL_RENDERER := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 TARGET_USES_ION := true
@@ -132,7 +130,6 @@ BOARD_SEPOLICY_UNION += \
     bluetooth_loader.te \
     bootanim.te \
     bridge.te \
-    domain.te \
     file.te \
     healthd.te \
     hostapd.te \
@@ -164,9 +161,8 @@ HAVE_ADRENO_SOURCE:= false
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 
-# QCOM PowerHAL
-TARGET_POWERHAL_VARIANT := qcom
-TARGET_POWERHAL_SET_INTERACTIVE_EXT := device/lge/hammerheadcaf/power/power_ext.c
+# Local QCOM PowerHAL
+TARGET_POWERHAL_VARIANT := hammerhead
 
 USE_DEVICE_SPECIFIC_QCOM_PROPRIETARY:= true
 USE_DEVICE_SPECIFIC_CAMERA:= true
