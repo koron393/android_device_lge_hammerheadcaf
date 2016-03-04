@@ -1,8 +1,9 @@
 [
  {
-   "repository": "android_kernel_lge_hammerhead",
-   "branch": "cm-12.1-caf",
-   "target_path": "kernel/lge/hammerhead"
+   "remote":      "github",
+   "repository":  "koron393/android_kernel_google_msm",
+   "target_path": "kernel/lge/hammerhead",
+   "revision":    "hammerhead-lp5.1-caf"
  },
  {
    "repository": "android_device_qcom_common",
