@@ -54,7 +54,6 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/hammerheadcaf/bluetooth
 BOARD_BLUEDROID_VENDOR_CONF := device/lge/hammerheadcaf/bluetooth/vnd_hammerhead.txt
-
 # Wifi related defines
 WPA_SUPPLICANT_VERSION      := VER_0_8_X
 BOARD_WLAN_DEVICE           := bcmdhd
@@ -111,6 +110,8 @@ BOARD_HAL_STATIC_LIBRARIES := libdumpstate.hammerhead
 # Define kernel config for inline building
 TARGET_KERNEL_CONFIG := cyanogenmod_hammerhead_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-cortex-a15/bin
 
 # SELinux policies
 # QCOM
